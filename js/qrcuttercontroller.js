@@ -1,4 +1,3 @@
-
 function cut(){
     $("#outputRange").empty();
     var qrId = "";
@@ -6,8 +5,8 @@ function cut(){
     var qrValue = "";
 
     var step = 0;
-    var inputString = $("#inputQRString").val();
-    var inputStringLength = $("#inputQRString").val().length;
+    var inputString = $("#inputQRString").val().trim();
+    var inputStringLength = $("#inputQRString").val().trim().length;
     var index = 1;
 
     while(step<inputStringLength){
