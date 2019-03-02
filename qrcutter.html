@@ -14,6 +14,7 @@
     <script src="./js/lib/jquery-3.3.1.slim.min.js"></script>
     <script src="./js/lib/popper.min.js"></script>
     <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="./js/qrcuttercontroller.js"></script>
 
 
     <style>
@@ -42,8 +43,8 @@
             <div class="inner">
                 <h3 class="masthead-brand">Ngoccx's Tools</h3>
                 <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link" href="./index.html">Home</a>
-                    <a class="nav-link active" href="./qrcutter.html">QR Cutter</a>
+                    <a class="nav-link" href="./index">Home</a>
+                    <a class="nav-link active" href="./qrcutter">QR Cutter</a>
                     <a class="nav-link" href="#">About</a>
                 </nav>
             </div>
@@ -56,26 +57,12 @@
                     <input type="text" class="form-control" id="inputQRString" placeholder="QR String">
                 </div>
                 <div class="col-md-1 mb-3">
-                    <button type="submit" class="btn btn-primary mb-2">Cut</button>
+                    <button type="submit" class="btn btn-primary mb-2" onclick="cut()">Cut</button>
                 </div>
             </div>
             </br>
             <h1 class="cover-heading">Output</h1>
             <div id="outputRange">
-                <div class="form-row">
-                    <div class="col-md-1 mb-3">
-                        <label for="validationCustom03">ID</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" disabled>
-                    </div>
-                    <div class="col-md-1 mb-3">
-                        <label for="validationCustom04">Length</label>
-                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" disabled>
-                    </div>
-                    <div class="col-md-10 mb-3">
-                        <label for="validationCustom05">Value</label>
-                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" disabled>
-                    </div>
-                </div>
             </div>
         </main>
 
