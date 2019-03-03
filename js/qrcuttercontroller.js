@@ -21,7 +21,6 @@ function cut(){
         qrValue = inputString.substring(step,step+qrLength);
         step+=qrLength;
         
-        $("#outputRange").append("<div class='form-row'><div class='col-md-1 mb-3'><input type='text' class='form-control' id='qrId"+index+"' value='"+qrId+"' disabled></div><div class='col-md-1 mb-3'><input type='text' class='form-control' id='qrLength"+index+"' value='"+qrLength+"' disabled></div><div class='col-md-10 mb-3'><input type='text' class='form-control' id='qrValue"+index+"' value='"+qrValue+"' disabled></div></div>");
-        index +=1;
+        $("#outputRange").append("<div class='form-row'><div class='col-md-1 mb-3'><input type='text' class='form-control' id='qrId"+qrId+"' value='"+qrId+"' disabled></div><div class='col-md-1 mb-3'><input type='text' class='form-control' id='qrLength"+qrId+"' value='"+qrLength+"' disabled></div><div class='col-md-10 mb-3'><input type='text' class='form-control' id='qrValue"+qrId+"' value='"+qrValue+"' disabled></div></div>");
     }    
 }

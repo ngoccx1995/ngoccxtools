@@ -9,7 +9,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
     <!-- CSS lib -->
     <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
-
     <!-- JS lib -->
     <script src="./js/lib/jquery-3.3.1.slim.min.js"></script>
     <script src="./js/lib/popper.min.js"></script>
@@ -44,26 +43,27 @@
                 <h3 class="masthead-brand">My Tools</h3>
                 <nav class="nav nav-masthead justify-content-center">
                     <a class="nav-link" href="./index">Home</a>
-                    <a class="nav-link active" href="./qrcutter">QR Cutter</a>
-                    <a class="nav-link" href="./hextostr">Hex2Str</a>
+                    <a class="nav-link" href="./qrcutter">QR Cutter</a>
+                    <a class="nav-link active" href="./hextostr">Hex2Str</a>
                     <a class="nav-link" href="#">About</a>
                 </nav>
             </div>
         </header>
 
         <main role="main" class="inner cover">
-            <h1 class="cover-heading">Input QR String</h1>
-            <div class="form-row">
-                <div class="col-md-11 mb-3">
-                    <input type="text" class="form-control" id="inputQRString" placeholder="QR String">
+
+            <div class="form-group">
+                <h1 class="cover-heading">Input Hex String</h1>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control" id="hexInput" rows="3"></textarea>
                 </div>
-                <div class="col-md-1 mb-3">
-                    <button type="submit" class="btn btn-primary mb-2" onclick="cut()">Cut</button>
+                <div class="col-md-12 mb-3">
+                    <button type="submit" class="btn btn-primary" onclick="cut()">Convert</i></button>
                 </div>
-            </div>
-            </br>
-            <h1 class="cover-heading">Output</h1>
-            <div id="outputRange">
+                <h1 class="cover-heading">Output</h1>
+                <div class="col-md-12 mb-3">
+                    <textarea class="form-control" id="strOutput" rows="3"></textarea>
+                </div>
             </div>
         </main>
 
